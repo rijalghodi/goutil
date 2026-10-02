@@ -1,4 +1,4 @@
-package sliceutil
+package slice
 
 import "errors"
 
