@@ -1,4 +1,4 @@
-package strutil
+package str
 
 import "testing"
 
@@ -23,12 +23,6 @@ func TestReverse(t *testing.T) {
 				t.Errorf("Reverse(%q) = %q; want %q", tt.input, result, tt.expected)
 			}
 		})
-	}
-}
-
-func TestTitle(t *testing.T) {
-	if got := Title("hello world"); got != "Hello World" {
-		t.Errorf("Title() = %q; want %q", got, "Hello World")
 	}
 }
 

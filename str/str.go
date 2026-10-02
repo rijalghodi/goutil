@@ -1,9 +1,7 @@
-package strutil
+package str
 
 import (
 	"github.com/gosimple/slug"
-	"golang.org/x/text/cases"
-	"golang.org/x/text/language"
 )
 
 // Reverse returns a new string with the characters in reverse order.
@@ -23,11 +21,6 @@ func IsBlank(s string) bool {
 		}
 	}
 	return true
-}
-
-// Title returns s with Unicode title casing (English).
-func Title(s string) string {
-	return cases.Title(language.English).String(s)
 }
 
 // Slug returns a URL-safe slug for s.
